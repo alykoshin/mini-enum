@@ -61,5 +61,5 @@ if (typeof module !== 'undefined') {
 
 if (typeof window !== 'undefined') {
   window.Enum = Enum;
-  window.Const  = Const;
+  window.Const = Const;
 }
