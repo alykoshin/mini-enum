@@ -1,0 +1,43 @@
+{
+  "name": "mini-enum",
+  "version": "0.0.1",
+  "description": "Minimal Enum for Browser and Node Javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "_test": "echo \"Error: no test specified\" && exit 1",
+    "__test": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- -R spec ./test/*",
+    "test-travis": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- -R spec ./test/*",
+    "_commit": "git commit -am \"commit by 'npm run commit'\"",
+    "_push": "git push --follow-tags",
+    "commit-and-push": "npm run _commit && npm test && npm run _push",
+    "_patch-release": "npm version patch && npm publish",
+    "_minor-release": "npm version minor && npm publish",
+    "_major-release": "npm version major && npm publish",
+    "patch-release": "npm test && npm run _patch-release && npm run _push",
+    "minor-release": "npm test && npm run _minor-release && npm run _push",
+    "__major-release": "npm test && npm run _major-release && npm run _push",
+    "coverall": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alykoshin/mini-enum.git"
+  },
+  "keywords": [
+    "wrtc",
+    "Enum"
+  ],
+  "author": "Alexander Lykoshin <alykoshin@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alykoshin/mini-enume/issues"
+  },
+  "homepage": "https://github.com/alykoshin/mini-enum",
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "coveralls": "^2.11.4",
+    "istanbul": "^0.4.1",
+    "mocha": "^2.3.4",
+    "mockery": "^1.4.0"
+  }
+}
