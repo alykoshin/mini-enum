@@ -1,7 +1,7 @@
-[![npm version](https://badge.fury.io/js/wrtc-ice-cand-parse.svg)](http://badge.fury.io/js/mini-enum)
+[![npm version](https://badge.fury.io/js/mini-enum.svg)](http://badge.fury.io/js/mini-enum)
 
-[![Dependency Status](https://david-dm.org/alykoshin/mini-enum/status.svg)](https://david-dm.org/alykoshin/mini-enume#info=dependencies)
-[![devDependency Status](https://david-dm.org/alykoshin/mini-enum/dev-status.svg)](https://david-dm.org/alykoshin/mini-enume#info=devDependencies)
+[![Dependency Status](https://david-dm.org/alykoshin/mini-enum/status.svg)](https://david-dm.org/alykoshin/mini-enum#info=dependencies)
+[![devDependency Status](https://david-dm.org/alykoshin/mini-enum/dev-status.svg)](https://david-dm.org/alykoshin/mini-enum#info=devDependencies)
 
 # mini-enum
 

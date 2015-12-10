@@ -4,6 +4,8 @@
 
 'use strict';
 
+var debug = require('mini-debug');
+
 var Const = function(obj) {
   if (Object.freeze) {
     Object.freeze(obj);
@@ -37,7 +39,9 @@ var Enum = function( obj ) {
   };
 
   obj.check = function(valueName) {
-    assert(obj.valueExists(valueName), 'ERROR: Enum '+JSON.stringify(obj)+' does not have property value \''+valueName+'\'');
+    if (!obj.valueExists(valueName)) {
+      debug.error('ERROR: Enum '+JSON.stringify(obj)+' does not have property value \''+valueName+'\'');
+    }
   };
 
   obj = Const(obj);

@@ -39,5 +39,8 @@
     "istanbul": "^0.4.1",
     "mocha": "^2.3.4",
     "mockery": "^1.4.0"
+  },
+  "dependencies": {
+    "mini-debug": "0.0.1"
   }
 }
