@@ -39,9 +39,11 @@ var Enum = function( obj ) {
   };
 
   obj.check = function(valueName) {
-    if (!obj.valueExists(valueName)) {
+    var res = obj.valueExists(valueName);
+    if (res) {
       debug.error('ERROR: Enum '+JSON.stringify(obj)+' does not have property value \''+valueName+'\'');
     }
+    return res;
   };
 
   obj = Const(obj);
