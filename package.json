@@ -1,6 +1,6 @@
 {
   "name": "mini-enum",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Minimal Enum for Browser and Node Javascript",
   "main": "index.js",
   "scripts": {
